@@ -205,11 +205,8 @@ MAGNUS_BUILD := UNOFFICIAL
 #MAGNUS_BUILD_ZIP_TYPE := VANILLA
 
 #Official and unofficial flags
-ifeq ($(SAKURA_OFFICIAL), true)
-include vendor/sakura-priv/keys.mk
+ifeq ($(MAGNUS_OFFICIAL), true)
     MAGNUS_BUILD := OFFICIAL
-    PRODUCT_PACKAGES += \
-    Updater
 endif
 
 #build type
@@ -235,7 +232,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
 endif
 
-# Increase sakura Version with each major release.
+# Increase Magnus Version with each major release.
 LINEAGE_VERSION := MagnusOS-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(MAGNUS_BUILD)-$(LINEAGE_BUILD)
 LINEAGE_DISPLAY_VERSION := MagnusOS-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(MAGNUS_BUILD)-$(LINEAGE_BUILD)
 

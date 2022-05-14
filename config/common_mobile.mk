@@ -17,6 +17,7 @@ PRODUCT_PACKAGES += \
     Backgrounds \
     Custom-Fonts \
     Eleven \
+    Firewall \
     OmniJaws \
     OmniStyle \
     Profiles \
