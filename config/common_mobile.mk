@@ -17,14 +17,10 @@ PRODUCT_PACKAGES += \
     Backgrounds \
     Custom-Fonts \
     Eleven \
-    Etar \
-    Firewall \
-    Jelly \
     OmniJaws \
     OmniStyle \
     Profiles \
     Seedvault \
-    SakuraWidget \
     StitchImage \
     StitchImageService
 

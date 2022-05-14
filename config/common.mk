@@ -6,7 +6,7 @@ $(call inherit-product-if-exists, vendor/addons/config.mk)
 # Bootanimation
 include vendor/lineage/config/bootanimation.mk
 
-PRODUCT_BRAND ?= ProjectSakura
+PRODUCT_BRAND ?= MagnusOS
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -198,41 +198,31 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
 
-#Sakura
-PRODUCT_VERSION_MAJOR = 5
-PRODUCT_VERSION_MINOR = 2
-SAKURA_BUILD := UNOFFICIAL
-SAKURA_BUILD_ZIP_TYPE := VANILLA
+#Magnus
+PRODUCT_VERSION_MAJOR = 1
+PRODUCT_VERSION_MINOR = 1
+MAGNUS_BUILD := UNOFFICIAL
+#MAGNUS_BUILD_ZIP_TYPE := VANILLA
 
-#Official and unofficial for the sake of the world
+#Official and unofficial flags
 ifeq ($(SAKURA_OFFICIAL), true)
 include vendor/sakura-priv/keys.mk
-    SAKURA_BUILD := OFFICIAL
+    MAGNUS_BUILD := OFFICIAL
     PRODUCT_PACKAGES += \
     Updater
 endif
 
 #build type
-ifeq ($(SAKURA_BUILD_TYPE), coregapps)
-    $(call inherit-product, vendor/gapps/core/config.mk)
-    SAKURA_BUILD_ZIP_TYPE := GAPPS-Core
-else ifeq ($(SAKURA_BUILD_TYPE), basicgapps)
-    $(call inherit-product, vendor/gapps/basic/config.mk)
-    SAKURA_BUILD_ZIP_TYPE := GAPPS-Basic
-else ifeq ($(SAKURA_BUILD_TYPE), microg)
-    $(call inherit-product, prebuilts/prebuiltapks/microg.mk)
-    SAKURA_BUILD_ZIP_TYPE := MICROG
-endif
-
-#OPLauncher
-#ifeq ($(SAKURA_OPLAUNCHER), true)
-#    $(call inherit-product, vendor/addons/prebuilt/app/OPLauncher/OPLauncher.mk)
+#ifeq ($(MAGNUS_BUILD_TYPE), coregapps)
+#    $(call inherit-product, vendor/gapps/core/config.mk)
+#    MAGNUS_BUILD_ZIP_TYPE := GAPPS-Core
+#else ifeq ($(MAGNUS_BUILD_TYPE), basicgapps)
+#    $(call inherit-product, vendor/gapps/basic/config.mk)
+#    MAGNUS_BUILD_ZIP_TYPE := GAPPS-Basic
+#else ifeq ($(MAGNUS_BUILD_TYPE), microg)
+#    $(call inherit-product, prebuilts/prebuiltapks/microg.mk)
+#    MAGNUS_BUILD_ZIP_TYPE := MICROG
 #endif
-
-#lawnchair
-ifeq ($(SAKURA_LAWNCHAIR), true)
-    $(call inherit-product, vendor/addons/prebuilt/app/Lawnchair/lawnchair.mk)
-endif
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED ?= true
@@ -246,9 +236,8 @@ PRODUCT_COPY_FILES += \
 endif
 
 # Increase sakura Version with each major release.
-LINEAGE_VERSION := ProjectSakura-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(SAKURA_BUILD_ZIP_TYPE)-$(shell date +%Y%m%d-%H%M)-$(LINEAGE_BUILD)-$(SAKURA_BUILD)
-LINEAGE_DISPLAY_VERSION := ProjectSakura-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(LINEAGE_BUILD)-$(SAKURA_BUILD)
-SAKURA_VERSION := $(LINEAGE_VERSION)
+LINEAGE_VERSION := MagnusOS-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(MAGNUS_BUILD)-$(LINEAGE_BUILD)
+LINEAGE_DISPLAY_VERSION := MagnusOS-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(MAGNUS_BUILD)-$(LINEAGE_BUILD)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/lineage/config/partner_gms.mk
