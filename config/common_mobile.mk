@@ -21,6 +21,7 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     OmniStyle \
     Profiles \
+    MagnusWidget \
     Seedvault \
     StitchImage \
     StitchImageService
