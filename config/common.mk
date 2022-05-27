@@ -205,9 +205,9 @@ MAGNUS_BUILD := UNOFFICIAL
 #MAGNUS_BUILD_ZIP_TYPE := VANILLA
 
 #Official and unofficial flags
-ifeq ($(MAGNUS_OFFICIAL), true)
-    MAGNUS_BUILD := OFFICIAL
-endif
+#ifeq ($(MAGNUS_OFFICIAL), true)
+#    MAGNUS_BUILD := OFFICIAL
+#endif
 
 #build type
 #ifeq ($(MAGNUS_BUILD_TYPE), coregapps)
