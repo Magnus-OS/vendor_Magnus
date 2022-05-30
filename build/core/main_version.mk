@@ -24,6 +24,6 @@ ADDITIONAL_BUILD_PROPERTIES += \
 ADDITIONAL_BUILD_PROPERTIES += \
     ro.lineage.build.version.plat.rev=$(LINEAGE_PLATFORM_REV)
 
-# additional sakura props
+# additional magnus props
 ADDITIONAL_BUILD_PROPERTIES += \
-    ro.sakura.maintainer=$(SAKURA_MAINTAINER)
+    ro.magnus.maintainer=$(MAGNUS_MAINTAINER)
