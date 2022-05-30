@@ -235,6 +235,7 @@ endif
 # Increase Magnus Version with each major release.
 LINEAGE_VERSION := MagnusOS-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +%Y%m%d)-$(MAGNUS_BUILD)-$(LINEAGE_BUILD)
 LINEAGE_DISPLAY_VERSION := MagnusOS-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(MAGNUS_BUILD)-$(LINEAGE_BUILD)
+MAGNUS_VERSION := $(LINEAGE_VERSION)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/lineage/config/partner_gms.mk
