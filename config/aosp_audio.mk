@@ -96,7 +96,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/newwavelabs/Revelation.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Revelation.ogg \
     $(LOCAL_PATH)/newwavelabs/SitarVsSitar.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/SitarVsSitar.ogg \
     $(LOCAL_PATH)/newwavelabs/SpringyJalopy.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/SpringyJalopy.ogg \
-    $(LOCAL_PATH)/newwavelabs/VeryAlarmed.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/VeryAlarmed.ogg \
     $(LOCAL_PATH)/ringtones/CASSIOPEIA.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/CASSIOPEIA.ogg \
     $(LOCAL_PATH)/ringtones/ogg/Aquila.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Aquila.ogg \
     $(LOCAL_PATH)/ringtones/ogg/ArgoNavis.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/ArgoNavis.ogg \
