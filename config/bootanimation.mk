@@ -1,5 +1,6 @@
 # Copyright (C) 2018 The Superior OS Project
 # Copyright (C) 2020 Direwolf Inc for Project Sakura
+# Copyright (C) 2022 MagnusOS
 # Copyright (C) 2022 Beru Shinsetsu
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +17,7 @@
 # Bootanimation
 ifeq ($(filter 720 1080 1440,$(TARGET_BOOT_ANIMATION_RES)),)
      $(warning TARGET_BOOT_ANIMATION_RES is invalid or undefined, using generic bootanimation)
-     TARGET_BOOT_ANIMATION_RES := 720
+     TARGET_BOOT_ANIMATION_RES := 1080
 endif
 
 # We don't know if the maintainer added space after definition in tree.
