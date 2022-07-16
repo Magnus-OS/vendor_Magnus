@@ -4,8 +4,8 @@ $(call inherit-product-if-exists, vendor/addons/themes/accents/accents.mk)
 
 # Default notification/alarm sounds
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.notification_sound=Pikachu.ogg \
-    ro.config.alarm_alert=Hassium.ogg
+    ro.config.notification_sound=Kanna.ogg \
+    ro.config.alarm_alert=Oxygen.ogg
 
 # AOSP packages
 PRODUCT_PACKAGES += \
