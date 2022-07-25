@@ -9,8 +9,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # AOSP packages
 PRODUCT_PACKAGES += \
-    Exchange2 \
-    ExactCalculator
+    Exchange2
 
 # Lineage packages
 PRODUCT_PACKAGES += \
@@ -22,6 +21,7 @@ PRODUCT_PACKAGES += \
     OmniStyle \
     Profiles \
     MagnusWidget \
+    Calculator \
     Seedvault \
     StitchImage \
     StitchImageService
