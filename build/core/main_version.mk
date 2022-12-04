@@ -4,22 +4,26 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 endif
 
-# LineageOS System Version
+# SpringOS System Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.version=$(LINEAGE_VERSION) \
-    ro.lineage.releasetype=$(LINEAGE_BUILDTYPE) \
-    ro.lineage.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-    ro.modversion=$(LINEAGE_VERSION) \
+    ro.spring.version=$(SPRING_VERSION) \
+    ro.spring.releasetype=$(SPRING_BUILDTYPE) \
+    ro.spring.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
+    ro.modversion=$(SPRING_VERSION) \
     ro.lineagelegal.url=https://lineageos.org/legal
 
-# LineageOS Platform Display Version
+# SpringOS Platform Display Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.display.version=$(LINEAGE_DISPLAY_VERSION)
+    ro.spring.display.version=$(SPRING_DISPLAY_VERSION)
 
-# LineageOS Platform SDK Version
+# SpringOS Platform SDK Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.build.version.plat.sdk=$(LINEAGE_PLATFORM_SDK_VERSION)
+    ro.spring.build.version.plat.sdk=$(SPRING_PLATFORM_SDK_VERSION)
 
-# LineageOS Platform Internal Version
+# SpringOS Platform Internal Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.build.version.plat.rev=$(LINEAGE_PLATFORM_REV)
+    ro.spring.build.version.plat.rev=$(SPRING_PLATFORM_REV)
+
+# Additional SpringOS Props
+ADDITIONAL_SYSTEM_PROPERTIES += \
+    ro.spring.maintainer=$(SPRING_MAINTAINER)

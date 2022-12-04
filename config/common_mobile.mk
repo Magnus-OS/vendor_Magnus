@@ -3,24 +3,15 @@ $(call inherit-product, vendor/lineage/config/common.mk)
 
 # Default notification/alarm sounds
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.notification_sound=Argon.ogg \
-    ro.config.alarm_alert=Hassium.ogg
+    ro.config.notification_sound=Rhea.ogg \
+    ro.config.alarm_alert=Oxygen.ogg
 
 # Apps
 PRODUCT_PACKAGES += \
-    Aperture \
     Backgrounds \
     Eleven \
-    Etar \
-    ExactCalculator \
-    Jelly \
     Profiles \
     Seedvault
-
-ifneq ($(TARGET_EXCLUDES_AUDIOFX),true)
-PRODUCT_PACKAGES += \
-    AudioFX
-endif
 
 ifeq ($(PRODUCT_TYPE), go)
 PRODUCT_PACKAGES += \
