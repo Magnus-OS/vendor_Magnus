@@ -9,6 +9,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Apps
 PRODUCT_PACKAGES += \
     Backgrounds \
+    Firewall \
     Eleven \
     Profiles \
     Seedvault
