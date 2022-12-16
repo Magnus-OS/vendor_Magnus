@@ -2,7 +2,7 @@
 # Copyright (C) 2012-2013, The CyanogenMod Project
 # Copyright (C) 2012-2015, SlimRoms Project
 # Copyright (C) 2016-2017, AOSiP
-# Copyright (C) 2022, SpringOS
+# Copyright (C) 2022, MagnusOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -46,8 +46,8 @@ DEBUG = False
 custom_local_manifest = ".repo/local_manifests/roomservice.xml"
 custom_default_revision =  "13"
 custom_dependencies = "lineage.dependencies"
-org_manifest = "SpringOS-Devices"  # leave empty if org is provided in manifest
-org_display = "SpringOS-Devices"  # needed for displaying
+org_manifest = "MagnusOS-Devices"  # leave empty if org is provided in manifest
+org_display = "MagnusOS-Devices"  # needed for displaying
 
 github_auth = None
 
